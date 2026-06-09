@@ -89,3 +89,4 @@ docker compose up --build
 ```
 
 La aplicación se expondrá en `http://127.0.0.1:8000`.
+Para ambientes no locales, reemplaza `JWT_SECRET` por un valor fuerte y aleatorio antes de desplegar.
