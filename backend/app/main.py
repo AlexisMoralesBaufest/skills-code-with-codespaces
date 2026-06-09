@@ -13,11 +13,19 @@ ALGORITHM = "HS256"
 JWT_SECRET = os.getenv("JWT_SECRET", "local-development-secret-change-me")
 VALID_USERNAME = os.getenv("APP_USERNAME", "admin")
 VALID_PASSWORD = os.getenv("APP_PASSWORD", "admin123")
+ALLOWED_CORS_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv(
+        "CORS_ALLOW_ORIGINS",
+        "http://127.0.0.1:5173,http://localhost:5173,http://127.0.0.1:4173,http://localhost:4173",
+    ).split(",")
+    if origin.strip()
+]
 
 app = FastAPI(title="JWT FastAPI", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex=r"https?://(localhost|127\.0\.0\.1)(:\d+)?$",
+    allow_origins=ALLOWED_CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
