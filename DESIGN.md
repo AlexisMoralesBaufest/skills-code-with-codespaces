@@ -8,4 +8,4 @@ La aplicación frontend utiliza un estándar visual simple y consistente basado 
 - **Espaciado**: separación mínima de `1rem` entre controles y padding de `1.5rem` a `2.5rem` en contenedores.
 - **Accesibilidad**: etiquetas visibles, foco resaltado y mensajes de estado para errores o sesiones expiradas.
 
-Estos tokens se implementan en `/home/runner/work/skills-code-with-codespaces/skills-code-with-codespaces/AlexisMoralesBaufest/skills-code-with-codespaces/frontend/src/index.css` y `/home/runner/work/skills-code-with-codespaces/skills-code-with-codespaces/AlexisMoralesBaufest/skills-code-with-codespaces/frontend/src/App.css`.
+Estos tokens se implementan en `frontend/src/index.css` y `frontend/src/App.css`.

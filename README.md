@@ -2,9 +2,9 @@
 
 Este repositorio contiene:
 
-- `/home/runner/work/skills-code-with-codespaces/skills-code-with-codespaces/AlexisMoralesBaufest/skills-code-with-codespaces/backend`: API FastAPI con autenticación JWT.
-- `/home/runner/work/skills-code-with-codespaces/skills-code-with-codespaces/AlexisMoralesBaufest/skills-code-with-codespaces/frontend`: aplicación React con login y página de bienvenida protegida.
-- `/home/runner/work/skills-code-with-codespaces/skills-code-with-codespaces/AlexisMoralesBaufest/skills-code-with-codespaces/DESIGN.md`: estándar visual usado por el frontend.
+- `backend`: API FastAPI con autenticación JWT.
+- `frontend`: aplicación React con login y página de bienvenida protegida.
+- `DESIGN.md`: estándar visual usado por el frontend.
 
 ## Funcionalidad
 
@@ -26,7 +26,7 @@ La aplicación web permite:
 ## Ejecución del backend
 
 ```bash
-cd /home/runner/work/skills-code-with-codespaces/skills-code-with-codespaces/AlexisMoralesBaufest/skills-code-with-codespaces/backend
+cd backend
 poetry install --no-root
 poetry run uvicorn app.main:app --reload
 ```
@@ -36,7 +36,7 @@ La API queda disponible en `http://127.0.0.1:8000`.
 ## Ejecución del frontend
 
 ```bash
-cd /home/runner/work/skills-code-with-codespaces/skills-code-with-codespaces/AlexisMoralesBaufest/skills-code-with-codespaces/frontend
+cd frontend
 npm install
 npm run dev
 ```
