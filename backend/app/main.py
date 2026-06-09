@@ -10,8 +10,8 @@ ACCESS_TOKEN_EXPIRE_SECONDS = 300
 REFRESH_TOKEN_EXPIRE_SECONDS = 600
 ALGORITHM = "HS256"
 JWT_SECRET = os.getenv("JWT_SECRET", "local-development-secret-change-me")
-VALID_USERNAME = "admin"
-VALID_PASSWORD = "admin123"
+VALID_USERNAME = os.getenv("APP_USERNAME", "admin")
+VALID_PASSWORD = os.getenv("APP_PASSWORD", "admin123")
 
 app = FastAPI(title="JWT FastAPI", version="1.0.0")
 

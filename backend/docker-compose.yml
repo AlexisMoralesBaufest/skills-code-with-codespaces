@@ -5,6 +5,8 @@ services:
       dockerfile: Dockerfile
     container_name: backend-jwt-api
     environment:
+      APP_USERNAME: admin
+      APP_PASSWORD: admin123
       JWT_SECRET: local-development-secret-change-me
     ports:
       - "8000:8000"

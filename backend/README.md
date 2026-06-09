@@ -7,6 +7,7 @@ Aplicación Web API en Python con FastAPI que expone autenticación basada en JW
 - Python 3.12
 - Poetry 2.x
 - Docker y Docker Compose (opcional)
+- Variables opcionales: `APP_USERNAME`, `APP_PASSWORD`, `JWT_SECRET`
 
 ## Endpoints
 
@@ -42,7 +43,7 @@ Endpoint protegido para validar el uso del access token.
 Header:
 
 ```text
-Authorization: ******
+Authorization: Bearer <ACCESS_TOKEN>
 ```
 
 ## Ejecución local con Poetry
@@ -77,7 +78,7 @@ Consultar usuario autenticado:
 
 ```bash
 curl http://127.0.0.1:8000/auth/me \
-  -H "Authorization: ******"
+  -H "Authorization: Bearer <ACCESS_TOKEN>"
 ```
 
 ## Ejecución con Docker
