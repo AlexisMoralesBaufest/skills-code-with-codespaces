@@ -1,0 +1,144 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.panel {
+  width: min(100%, 30rem);
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-card);
+  padding: 2.5rem;
+}
+
+.card--dense {
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-accent);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lead {
+  margin: 0 0 2rem;
+  color: var(--color-muted);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.field input {
+  appearance: none;
+  border: 1px solid var(--color-border);
+  border-radius: 0.9rem;
+  background: var(--color-background);
+  color: var(--color-text);
+  padding: 0.9rem 1rem;
+  font: inherit;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.field input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.25rem var(--color-accent-soft);
+  outline: none;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-strong));
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.9rem 1.2rem;
+  transition: transform 150ms ease, opacity 150ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
+.button--secondary {
+  background: var(--color-text);
+}
+
+.message {
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0.85rem 1rem;
+}
+
+.message--error {
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.message--info {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-strong);
+}
+
+.summary {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.summary > div {
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-background);
+}
+
+.summary strong,
+.summary__label {
+  display: block;
+}
+
+.summary__label {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+  }
+}

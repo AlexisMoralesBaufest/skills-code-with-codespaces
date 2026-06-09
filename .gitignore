@@ -38,3 +38,5 @@ Thumbs.db
 __pycache__/
 *.py[cod]
 backend/.venv/
+frontend/node_modules/
+frontend/dist/
